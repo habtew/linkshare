@@ -1,0 +1,10 @@
+.maincontainer {
+    display: flex;
+    max-width: 375px;
+    padding-bottom: 237px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    background: var(--White, #FFF);
+    margin: 0 auto;
+}

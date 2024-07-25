@@ -1,0 +1,118 @@
+.mainContent {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-color: white;
+
+
+}
+.customizecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.info {
+    align-self: stretch;
+}
+
+.info h1 {
+    align-self: stretch;
+    color: var(--Dark-Grey, #333);
+    font-family: "Instrument Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+}
+
+.info p{
+    color: var(--Grey, #737373);
+
+/* Body M */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.customizecontainer button {
+    display: flex;
+    padding: 11px 27px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--Purple, #633CFF);
+    color: var(--Purple, #633CFF);
+}
+
+
+.emptycontainer {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.emptycontainer img {
+    align-self:center ;
+}
+
+.emptycontainer h1 {
+    color: var(--Dark-Grey, #333);
+    text-align: center;
+    font-family: "Instrument Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #333333;
+    line-height: 150%; /* 36px */
+}
+
+.emptycontainer p {
+    color: var(--Grey, #737373);
+    /* text-align: center; */
+
+    /* Body M */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.footer {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    
+}
+
+.footer button {
+    display: flex;
+    padding: 11px 27px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    background: var(--Purple, #633CFF);
+    color: white;
+}

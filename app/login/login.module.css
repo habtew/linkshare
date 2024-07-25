@@ -1,0 +1,189 @@
+
+.main {
+    max-width: 375px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    margin: auto auto;
+    height: 100vh;
+
+}
+
+.login {
+    background-color: var(--white);
+    color: var(--purple);
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 26.25px;
+}
+
+.solarlink {
+    width: 40px;
+    height: 40px;
+}
+
+
+.loginsection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+}
+
+.loginsection form {
+    display: flex;
+    width: 311px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.logininfo {
+    align-self: stretch;
+    color: var(--Dark-Grey, #333);
+    font-family: "Instrument Sans";
+    font-style: normal;
+    
+}
+
+.logininfo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+}
+
+.logininfo p {
+    color: var(--Grey, #737373);
+
+    /* Body M */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+
+.formcontainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+
+.email, .password {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.email label,
+.password label {
+    color: var(--Dark-Grey, #333);
+
+    /* Body S */
+    font-family: "Instrument Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}
+
+.emailinput,
+.passwordinput {
+    width: 311px;
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--Borders, #D9D9D9);
+    background: var(--White, #FFF);
+}
+
+.emailinput input,
+.passwordinput input
+ {
+    flex: 1 0 0;
+    color: var(--Dark-Grey, #333);
+
+    /* Body M */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    background-color: white !important;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    padding: 11px 27px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--Purple, #633CFF);
+    
+    /* Heading S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    color: white;
+}
+
+.create {
+    align-self: stretch;
+    color: var(--Grey, #737373);
+    text-align: center;
+    /* Body M */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+
+    color: var(--Grey, #737373);
+
+/* Body M */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.create a {
+    color: var(--Purple, #633CFF);
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .main {
+        max-width: 400px;
+        margin: auto;
+    }
+}
