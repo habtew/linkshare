@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image'; // Import Image from next/image
 import styles from './Links.module.css';
 import Addlink from './Addlink';
 import { db } from '@/firebaseConfig';
@@ -77,7 +78,7 @@ const Links = () => {
       </div>
       {links.length === 0 ? (
         <div className={styles.emptycontainer}>
-          <img src="/Group 273.svg" alt="" />
+          <Image src="/Group 273.svg" alt="Empty State" width={100} height={100} /> {/* Updated Image component */}
           <h1>Let’s get you started</h1>
           <p>Use the “Add new link” button to get started. Once you have more than one link, you can reorder and edit them. We’re here to help you share your profiles with everyone!</p>
         </div>

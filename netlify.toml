@@ -1,0 +1,9 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_ENV = "production"
+
+# Optional: Redirects, rewrites, or headers can be configured here

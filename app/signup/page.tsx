@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@/firebaseConfig'; // Import Firebase auth
 import styles from './signup.module.css';
+import Image from 'next/image'; // Import Image from next/image
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -38,8 +39,8 @@ const Signup = () => {
     <main className={styles.main}>
       <div className={styles.login}>
         <div className={styles.header}>
-          <img className={styles.solarlink} src="/solar_link-circle-bold.svg" alt="" />
-          <img src="/devlinks.svg" alt="" />
+          <Image className={styles.solarlink} src="/solar_link-circle-bold.svg" alt="Solar Link" width={100} height={100} />
+          <Image src="/devlinks.svg" alt="Dev Links" width={100} height={100} />
         </div>
         <div className={styles.loginsection}>
           <div className={styles.logininfo}>
@@ -51,7 +52,7 @@ const Signup = () => {
               <div className={styles.email}>
                 <label>Email address</label>
                 <div className={styles.emailinput}>
-                  <img src="/ph_envelope-simple-fill.svg" alt="" />
+                  <Image src="/ph_envelope-simple-fill.svg" alt="Envelope" width={24} height={24} />
                   <input
                     type='email'
                     placeholder='e.g: alex@email.com'
@@ -63,7 +64,7 @@ const Signup = () => {
               <div className={styles.password}>
                 <label>Password</label>
                 <div className={styles.passwordinput}>
-                  <img src="/ph_lock-key-fill.svg" alt="" />
+                  <Image src="/ph_lock-key-fill.svg" alt="Lock" width={24} height={24} />
                   <input
                     type='password'
                     placeholder='Enter your password'
@@ -75,7 +76,7 @@ const Signup = () => {
               <div className={styles.password}>
                 <label>Confirm Password</label>
                 <div className={styles.passwordinput}>
-                  <img src="/ph_lock-key-fill.svg" alt="" />
+                  <Image src="/ph_lock-key-fill.svg" alt="Lock" width={24} height={24} />
                   <input
                     type='password'
                     placeholder='Confirm your password'

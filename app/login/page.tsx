@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@/firebaseConfig'; // Import Firebase auth
+import Image from 'next/image'; // Import Image from next/image
 import styles from './login.module.css';
 
 const Login = () => {
@@ -28,8 +29,8 @@ const Login = () => {
     <main className={styles.main}>
       <div className={styles.login}>
         <div className={styles.header}>
-          <img className={styles.solarlink} src="/solar_link-circle-bold.svg" alt="" />
-          <img src="/devlinks.svg" alt="" />
+          <Image className={styles.solarlink} src="/solar_link-circle-bold.svg" alt="" width={50} height={50} />
+          <Image src="/devlinks.svg" alt="" width={100} height={50} />
         </div>
         <div className={styles.loginsection}>
           <div className={styles.logininfo}>
@@ -41,7 +42,7 @@ const Login = () => {
               <div className={styles.email}>
                 <label>Email address</label>
                 <div className={styles.emailinput}>
-                  <img src="/ph_envelope-simple-fill.svg" alt="" />
+                  <Image src="/ph_envelope-simple-fill.svg" alt="" width={20} height={20} />
                   <input
                     type='email'
                     placeholder='e.g: alex@email.com'
@@ -53,7 +54,7 @@ const Login = () => {
               <div className={styles.password}>
                 <label>Password</label>
                 <div className={styles.passwordinput}>
-                  <img src="/ph_lock-key-fill.svg" alt="" />
+                  <Image src="/ph_lock-key-fill.svg" alt="" width={20} height={20} />
                   <input
                     type='password'
                     placeholder='Enter your password'
@@ -66,7 +67,7 @@ const Login = () => {
               <button className={styles.btn} type="submit">Login</button>
             </form>
             <div className={styles.create}>
-              <p>Don't have an account </p>
+              <p>Don&apos;t have an account?</p>
               <a href="/signup">Create account</a>
             </div>
           </div>
